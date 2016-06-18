@@ -177,3 +177,11 @@ display:block;
 .wide{
 	width: 257px;
 }
+
+a {
+	color: pink;
+}
+
+a:hover {
+	color: violet;
+}
