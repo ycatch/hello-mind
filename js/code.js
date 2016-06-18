@@ -1,7 +1,7 @@
 var mind_word = [
     "Love ",
-    "Male ",
-    "Female ",
+    "Man ",
+    "Woman ",
 	"Age ",
     "Job ",
     "Evils ",
@@ -11,10 +11,14 @@ var mind_word = [
     "Power ",
     "Food ",
     "TV ",
-    "Universe ",
+    "COSMOS ",
+	"Harmony ",
+    "Angel ",
+    "Flower ",
     "Happy ",
 	"Anger ",
-	"You",
+	"You ",
+	" I ",
     ""
 ];
 
