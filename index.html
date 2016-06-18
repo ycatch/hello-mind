@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<!-- META -->
+	<title>Hello Mind - Do you want to know the mind of the person?</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
+	<meta name="description" content="" />
+
+	<!-- CSS -->
+	<link rel="stylesheet" type="text/css" href="css/kickstart.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="css/jqcloud.css" media="all" />
+	<link rel="stylesheet" type="text/css" href="style.css" media="all" />
+</head>
+
+<body>
+	<div class="grid">
+		<div id="result_title" class="wide">
+			<p></p>
+		</div>
+		<div id="result">
+			<p></p>
+			<br />
+			<!-- Tag Cloud -->
+			<div id="face">
+				<div id="wordcloud"></div>
+			</div>
+			<p></p>
+			<br />
+		</div>
+		<div>
+			<h3>
+				Hello <i class="fa fa-heart" style="color:#ff99cc;"></i> Mind
+			</h3>
+			<p>Check the mind of the person.</p>
+			<input id="key_phrase" class="wide" type="text" placeholder="Who?" />
+			<p></p>
+			<p><button id="check" class="wide large pink" href="#"> Try It </button></p>
+			<p><button id="clear" class="wide Small" href="#">Clear</button></p>
+			<p></p>
+			<br />
+		</div>
+		<div>
+			<h4>Most Popular</h4>
+			<ul>
+				<li><a href="./index.html?Justin Bieber">Justin Bieber</a></li>
+				<li><a href="./index.html?Zac Efron">Zac Efron</a></li>
+				<li><a href="./index.html?Justin Timberlake">Justin Timberlake</a></li>
+				<li><a href="./index.html?Taylor Swift">Taylor Swift</a></li>
+				<li><a href="./index.html?Ariana Grande">Ariana Grande</a></li>
+				<li><a href="./index.html?Miley Cyrus">Miley Cyrus</a></li>
+				<li><a href="./index.html?Barack Obama">Barack Obama</a></li>
+				<li><a href="./index.html?Hillary Clinton">Hillary Clinton</a></li>
+				<li><a href="./index.html?Donald Trump">Donald Trump</a></li>
+				<li><a href="./index.html?Samuel L Jackson">Samuel L Jackson</a></li>
+			</ul>
+		</div>
+		<div class="clear"></div>
+		<div id="footer" class="col_12 left">
+			Notice:This service is Beta version. All results are just only joking. - &copy; 2016 HelloMind Research Institute All Rights Reserved.
+		</div>
+	</div>
+	<!-- End Grid -->
+	<!-- Javascript -->
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+	<!-- <script type="text/javascript" src="js/jquery-1.11.2.min.js"></script> -->
+	<script type="text/javascript" src="js/jqcloud.min.js"></script>
+	<script type="text/javascript" src="js/crc.js"></script>
+	<script type="text/javascript" src="js/kickstart.js"></script>
+	<script type="text/javascript" src="js/code.js"></script>
+	<script>
+		(function(i, s, o, g, r, a, m) {
+			i['GoogleAnalyticsObject'] = r;
+			i[r] = i[r] || function() {
+				(i[r].q = i[r].q || []).push(arguments)
+			}, i[r].l = 1 * new Date();
+			a = s.createElement(o),
+				m = s.getElementsByTagName(o)[0];
+			a.async = 1;
+			a.src = g;
+			m.parentNode.insertBefore(a, m)
+		})(window, document, 'script', 'https://www.google-analytics.com/analytics.js', 'ga');
+
+		ga('create', 'UA-79298322-1', 'auto');
+		ga('send', 'pageview');
+	</script>
+</body>
+
+</html>
