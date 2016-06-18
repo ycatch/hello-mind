@@ -40,7 +40,7 @@ $(function() {
 		if (!key[1]) {
 			jumpPage('index.html?' + key[0] + "&" + getTimeString());
 		} else {
-			$("#result_title p").html("Now " + decodeURI(key[0]) + " <br />is thinking about ...");
+			$("#result_title p").html("Now " + decodeURI(key[0]) + " is<br /> thinking about ...");
 			$("#result_title").show();
 			buildMessage(key[0] + key[1]);
 			$("#result").fadeIn("slow");
