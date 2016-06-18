@@ -105,5 +105,6 @@ var jumpPage = function(e) {
 
 var getTimeString = function() {
 	var d = new Date();
-	return d.toString();
+	//return d.toString();
+	return d.getTime();
 }
