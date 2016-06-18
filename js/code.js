@@ -40,7 +40,9 @@ $(function() {
 		if (!key[1]) {
 			jumpPage('index.html?' + key[0] + "&" + getTimeString());
 		} else {
-			$("#result_title p").html("Now " + decodeURI(key[0]) + " is<br /> thinking about ...");
+			var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
+			document.title = "#HelloMind : " + title;
+			$("#result_title p").html(title);
 			$("#result_title").show();
 			buildMessage(key[0] + key[1]);
 			$("#result").fadeIn("slow");
@@ -60,7 +62,9 @@ $(function() {
         jumpPage('index.html');
     });
 
-
+	$('.social-likes').socialLikes({
+    	title: document.title
+	});
 });
 
 var buildMessage = function(key) {
