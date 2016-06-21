@@ -14,9 +14,9 @@ $(function() {
 
     if (key[0] != "") {
 		if (!key[1]) {
-			jumpPage('index.html?' + key[0] + "&" + getTimeString());
+			jumpPage('index.ja.html?' + key[0] + "&" + getTimeString());
 		} else {
-			var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
+			var title = "いま、" + decodeURI(key[0]) + "さんのココロは...";
 			document.title = "#HelloMind : " + title;
 			$("#result_title p").html(title);
 			$("#result_title").show();
@@ -28,14 +28,14 @@ $(function() {
     $('#check').click(function(e) {
         var phrase = $("#key_phrase").val();
         if (phrase == "") {
-            $("#key_phrase").attr("placeholder", "Please enter again.")
+            $("#key_phrase").attr("placeholder", "もう一度、入力.")
         } else {
-			jumpPage('index.html?' + phrase + "&" + getTimeString());
+			jumpPage('index.ja.html?' + phrase + "&" + getTimeString());
         }
     });
 
     $('#clear').click(function(e) {
-        jumpPage('index.html');
+        jumpPage('index.ja.html');
     });
 
 	$('.social-likes').socialLikes({
