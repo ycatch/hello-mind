@@ -16,7 +16,7 @@ $(function() {
 		if (!key[1]) {
 			jumpPage('index.ja.html?' + key[0] + "&" + getTimeString());
 		} else {
-			var title = "いま、 #" + decodeURI(key[0]) + " さんのココロは...";
+			var title = "いま、 " + decodeURI(key[0]) + " さんのココロは...";
 			document.title = title;
 			$("#result_title p").html(title);
 			$("#result_title").show();
@@ -26,7 +26,7 @@ $(function() {
     }
 
     $('#check').click(function(e) {
-        var phrase = $("#key_phrase").val().replace( /\s/g , "_" );
+        var phrase = $("#key_phrase").val();
         if (phrase == "") {
             $("#key_phrase").attr("placeholder", "もう一度、入力.")
         } else {

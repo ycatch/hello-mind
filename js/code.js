@@ -16,7 +16,7 @@ $(function() {
 		if (!key[1]) {
 			jumpPage('index.html?' + key[0] + "&" + getTimeString());
 		} else {
-			var title = "Now #" + decodeURI(key[0]) + " is thinking about ...";
+			var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
 			document.title = title;
 			$("#result_title p").html(title);
 			$("#result_title").show();
@@ -26,7 +26,7 @@ $(function() {
     }
 
     $('#check').click(function(e) {
-        var phrase = $("#key_phrase").val().replace( /%20/g, "");
+        var phrase = $("#key_phrase").val();
         if (phrase == "") {
             $("#key_phrase").attr("placeholder", "Please enter again.")
         } else {
