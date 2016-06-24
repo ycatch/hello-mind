@@ -14,7 +14,7 @@ $(function() {
 
     if (key[0] != "") {
 		if (!key[1]) {
-			jumpPage('index.html?' + key[0] + "&" + getTimeString());
+			jumpPage('index.uk.html?' + key[0] + "&" + getTimeString());
 		} else {
 			var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
 			document.title = title;
@@ -30,12 +30,12 @@ $(function() {
         if (phrase == "") {
             $("#key_phrase").attr("placeholder", "Please enter again.")
         } else {
-			jumpPage('index.html?' + phrase + "&" + getTimeString());
+			jumpPage('index.uk.html?' + phrase + "&" + getTimeString());
         }
     });
 
     $('#clear').click(function(e) {
-        jumpPage('index.html');
+        jumpPage('index.uk.html');
     });
 
 	$('.social-likes').socialLikes({

@@ -161,7 +161,7 @@ display:block;
 
 /* face of mind*/
 #face{
-	background-image: url("face.png");
+	background-image: url("head.png");
 	background-repeat: no-repeat;
 	height: 257px;
 }

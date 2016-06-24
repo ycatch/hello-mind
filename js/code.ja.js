@@ -69,11 +69,11 @@ var genMindHush = function(mh, start, len, w) {
 	}
 
 	$("#wordcloud").jQCloud(word_array, {
-		width: 220,
-		height: 248,
+		width: 190,
+		height: 205,
 		center: {
-			x: 140,
-			y: 130
+			x: 135,
+			y: 113
 		}
 	});
 };
