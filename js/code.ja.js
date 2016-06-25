@@ -6,6 +6,7 @@ var key = [];
 $(function() {
 	$("#result_title").hide();
 	$("#result").hide();
+	$("#input_form").hide();
 
 	//key[0] = key phrase;
 	//key[1] = key date + time;
@@ -23,7 +24,9 @@ $(function() {
 			buildMessage(key[0] + key[1]);
 			$("#result").fadeIn("slow");
 		}
-    }
+    } else {
+		$("#input_form").show();
+	}
 
     $('#check').click(function(e) {
         var phrase = $("#key_phrase").val();
