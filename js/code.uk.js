@@ -9,21 +9,15 @@ $(function() {
 	$("#input_form").hide();
 
 	//key[0] = key phrase;
-	//key[1] = key date + time;
-	//console.log("1: " + key[0] + ", " + key[1]);
 	key = location.search.substr(1).split("&");
 
     if (key[0] != "") {
-		if (!key[1]) {
-			jumpPage('index.uk.html?' + key[0] + "&" + getTimeString());
-		} else {
-			var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
-			document.title = title;
-			$("#result_title p").html(title);
-			$("#result_title").show();
-			buildMessage(key[0] + key[1]);
-			$("#result").fadeIn("slow");
-		}
+		var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
+		document.title = title;
+		$("#result_title p").html(title);
+		$("#result_title").show();
+		buildMessage(key[0] + key[1]);
+		$("#result").fadeIn("slow");
     } else {
 		$("#input_form").show();
 	}
@@ -33,7 +27,7 @@ $(function() {
         if (phrase == "") {
             $("#key_phrase").attr("placeholder", "Please enter again.")
         } else {
-			jumpPage('index.uk.html?' + phrase + "&" + getTimeString());
+			jumpPage('index.uk.html?' + phrase);
         }
     });
 
@@ -84,10 +78,4 @@ var genMindHush = function(mh, start, len, w) {
 var jumpPage = function(e) {
 	//console.log("jumpPage: " + e);
 	window.location.href = e;
-}
-
-var getTimeString = function() {
-	var d = new Date();
-	//return d.toString();
-	return d.getTime();
 }
