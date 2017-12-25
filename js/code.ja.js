@@ -12,7 +12,7 @@ $(function() {
 	key = location.search.substr(1).split("&");
 
     if (key[0] != "") {
-		var title = "いま、 " + decodeURI(key[0]) + " さんのココロは...";
+		var title = decodeURI(key[0]) + " さんのココロは...";
 		document.title = title;
 		$("#result_title p").html(title);
 		$("#result_title").show();
