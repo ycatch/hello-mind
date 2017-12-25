@@ -12,7 +12,7 @@ $(function() {
 	key = location.search.substr(1).split("&");
 
     if (key[0] != "") {
-		var title = "Now " + decodeURI(key[0]) + " is thinking about ...";
+		var title = decodeURI(key[0]) + " is thinking about ...";
 		document.title = title;
 		$("#result_title p").html(title);
 		$("#result_title").show();
